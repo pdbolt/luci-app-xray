@@ -18,9 +18,9 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - arch: x86_64
-            sdk_url_path: https://downloads.openwrt.org/snapshots/targets/x86/64
-            sdk_name: -sdk-x86-64_
+          - arch: ipq807x-generic
+            sdk_url_path: https://downloads.openwrt.org/snapshots/targets/ipq807x/generic
+            sdk_name: sdk-ipq807x-generic_
 
     env:
       SDK_URL_PATH: ${{ matrix.sdk_url_path }}
